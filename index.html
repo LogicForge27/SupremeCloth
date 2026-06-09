@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendyThreads - Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TrendyThreads</h1>
+        <nav>
+            <a href="#boys">Boys Shirts</a>
+            <a href="#ladies">Ladies Skirts</a>
+            <a href="admin.html" target="_blank">Admin</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Welcome to TrendyThreads</h2>
+        <p>Stylish clothing for everyone!</p>
+    </section>
+
+    <section id="boys">
+        <h2>Boys Shirts</h2>
+        <div class="product-grid" id="boys-grid"></div>
+    </section>
+
+    <section id="ladies">
+        <h2>Ladies Skirts</h2>
+        <div class="product-grid" id="ladies-grid"></div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Order Product</h2>
+            <div id="product-info"></div>
+            <form id="order-form">
+                <label>Name:</label>
+                <input type="text" id="customer-name" required>
+                <label>Mobile Number:</label>
+                <input type="tel" id="customer-mobile" required>
+                <button type="submit">Continue</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
