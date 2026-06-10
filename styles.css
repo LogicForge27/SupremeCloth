@@ -56,6 +56,16 @@ nav a {
     margin-top: 10px;
 }
 
+.size-select {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.size-select select {
+    padding: 5px;
+    margin-left: 5px;
+}
+
 .price {
     margin: 10px 0;
     font-size: 1.1em;
