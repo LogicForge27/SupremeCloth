@@ -56,6 +56,29 @@ nav a {
     margin-top: 10px;
 }
 
+.price {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.actual-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 8px;
+}
+
+.sale-price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-right: 8px;
+}
+
+.discount {
+    color: #27ae60;
+    font-weight: bold;
+}
+
 .modal {
     display: none;
     position: fixed;
