@@ -1,5 +1,5 @@
 const boysShirts = [
-    { id: 1, name: "Casual Blue Shirt", price: 100, img: "https://picsum.photos/id/1015/300/200" },
+    { id: 1, name: "Casual Blue Shirt", price: 100, img: "https://www.bing.com/images/search?view=detailV2&ccid=35aGNw3v&id=B91742F83E28F4F78CBD4CC9C8E881E1C2A4D0DB&thid=OIP.35aGNw3v7vot8Eynjltg6wHaJr&mediaurl=https%3a%2f%2fm.media-amazon.com%2fimages%2fI%2f71Y722irfzL._AC_SL1500_.jpg&exph=1500&expw=1147&q=casual+blue+shirt&FORM=IRPRST&ck=9EF2E057DB4234566B81F19447E953CF&selectedIndex=2&itb=0" },
     { id: 2, name: "Striped Polo", price: 100, img: "https://picsum.photos/id/106/300/200" },
     { id: 3, name: "Graphic Tee", price: 150, img: "https://picsum.photos/id/201/300/200" },
     { id: 4, name: "Denim Shirt", price: 119, img: "https://picsum.photos/id/133/300/200" },
