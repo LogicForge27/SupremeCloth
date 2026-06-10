@@ -39,7 +39,8 @@
                     <p><strong>Timestamp:</strong> ${new Date(order.timestamp).toLocaleString()}</p>
                     <p><strong>Location:</strong> 
                         ${order.location.latitude ? 
-                            `<a href="https://www.google.com/maps?q=${order.location.latitude},${order.location.longitude}" target="_blank">View on Map</a>` : 
+                            `Lat: ${order.location.latitude.toFixed(6)}, Lng: ${order.location.longitude.toFixed(6)} 
+                             (Accuracy: ${order.location.accuracy ? order.location.accuracy.toFixed(0) + 'm' : 'N/A'})` : 
                             'Not available'}
                     </p>
                 `;

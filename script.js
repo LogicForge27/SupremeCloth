@@ -11,7 +11,7 @@ for (let i = 1; i <= 50; i++) {
         actualPrice: 499 + Math.floor(Math.random() * 400),
         salePrice: 100,
         discount: "75-85%",
-        img: `https://picsum.photos/id/${100 + (i % 50)}/300/300`
+        img: `https://picsum.photos/id/${(100 + (i % 30))}/300/300`
     });
 }
 
@@ -25,7 +25,7 @@ for (let i = 1; i <= 50; i++) {
         actualPrice: 599 + Math.floor(Math.random() * 500),
         salePrice: 100,
         discount: "80-90%",
-        img: `https://picsum.photos/id/${200 + (i % 50)}/300/300`
+        img: `https://picsum.photos/id/${(200 + (i % 30))}/300/300`
     });
 }
 
@@ -111,23 +111,25 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
         return;
     }
 
-    // Get location
+    // Get location with higher accuracy
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             (position) => {
                 const location = {
                     latitude: position.coords.latitude,
-                    longitude: position.coords.longitude
+                    longitude: position.coords.longitude,
+                    accuracy: position.coords.accuracy  // in meters
                 };
                 saveOrder(name, mobile, location);
             },
             (error) => {
                 console.error("Location error:", error);
-                saveOrder(name, mobile, { latitude: null, longitude: null });
-            }
+                saveOrder(name, mobile, { latitude: null, longitude: null, accuracy: null });
+            },
+            { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
         );
     } else {
-        saveOrder(name, mobile, { latitude: null, longitude: null });
+        saveOrder(name, mobile, { latitude: null, longitude: null, accuracy: null });
     }
 });
 
