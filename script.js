@@ -1,17 +1,17 @@
 const boysShirts = [
-    { id: 1, name: "Casual Blue Shirt", price: 499, img: "https://picsum.photos/id/1015/300/200" },
-    { id: 2, name: "Striped Polo", price: 599, img: "https://picsum.photos/id/106/300/200" },
-    { id: 3, name: "Graphic Tee", price: 399, img: "https://picsum.photos/id/201/300/200" },
-    { id: 4, name: "Denim Shirt", price: 699, img: "https://picsum.photos/id/133/300/200" },
-    { id: 5, name: "Formal White Shirt", price: 799, img: "https://picsum.photos/id/1060/300/200" }
+    { id: 1, name: "Casual Blue Shirt", price: 100, img: "https://picsum.photos/id/1015/300/200" },
+    { id: 2, name: "Striped Polo", price: 100, img: "https://picsum.photos/id/106/300/200" },
+    { id: 3, name: "Graphic Tee", price: 150, img: "https://picsum.photos/id/201/300/200" },
+    { id: 4, name: "Denim Shirt", price: 119, img: "https://picsum.photos/id/133/300/200" },
+    { id: 5, name: "Formal White Shirt", price: 200, img: "https://picsum.photos/id/1060/300/200" }
 ];
 
 const ladiesSkirts = [
-    { id: 6, name: "Floral Maxi Skirt", price: 899, img: "https://picsum.photos/id/1016/300/200" },
-    { id: 7, name: "Denim Mini Skirt", price: 649, img: "https://picsum.photos/id/133/300/200" },
-    { id: 8, name: "Pleated Midi Skirt", price: 749, img: "https://picsum.photos/id/201/300/200" },
-    { id: 9, name: "A-Line Black Skirt", price: 599, img: "https://picsum.photos/id/106/300/200" },
-    { id: 10, name: "Summer Print Skirt", price: 449, img: "https://picsum.photos/id/1015/300/200" }
+    { id: 6, name: "Floral Maxi Skirt", price: 139, img: "https://picsum.photos/id/1016/300/200" },
+    { id: 7, name: "Denim Mini Skirt", price: 140, img: "https://picsum.photos/id/133/300/200" },
+    { id: 8, name: "Pleated Midi Skirt", price: 119, img: "https://picsum.photos/id/201/300/200" },
+    { id: 9, name: "A-Line Black Skirt", price: 129, img: "https://picsum.photos/id/106/300/200" },
+    { id: 10, name: "Summer Print Skirt", price: 100, img: "https://picsum.photos/id/1015/300/200" }
 ];
 
 let currentProduct = null;
