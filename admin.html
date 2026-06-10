@@ -34,7 +34,7 @@
                 div.style.margin = '10px 0';
                 div.style.padding = '15px';
                 div.innerHTML = `
-                    <h3>Order ${index + 1}: ${order.product.name}</h3>
+                    <h3>Order ${index + 1}: ${order.product.name} (Size: ${order.product.selectedSize || 'N/A'})</h3>
                     <p><strong>Customer:</strong> ${order.customer.name} (${order.customer.mobile})</p>
                     <p><strong>Timestamp:</strong> ${new Date(order.timestamp).toLocaleString()}</p>
                     <p><strong>Location:</strong> 
